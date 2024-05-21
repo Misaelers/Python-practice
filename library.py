@@ -32,15 +32,21 @@ class Inventario:
         
 def main():
     inventario = Inventario()
-# Agregar libros al inventario
-    libro1 = Libro("El principito", "Antoine de Saint-Exupéry", 15.99)
-    libro2 = Libro("Harry Potter y la piedra filosofal", "J.K. Rowling", 19.99)
-    inventario.agregar_libro(libro1)
-    inventario.agregar_libro(libro2)
-# Buscar un libro por título
-    inventario.buscar_libro("El principito")
-# Registrar una venta
-    inventario.registrar_venta("El principito")
+    #libro1 = Libro("El principito", "Antoine de Saint-Exupéry", 15.99)
+    #libro2 = Libro("Harry Potter y la piedra filosofal", "J.K. Rowling", 19.99)
+
+    #inventario.agregar_libro(libro1)
+    #inventario.agregar_libro(libro2)
+
+    titulo = input("Introduce el título del libro nuevo: ")
+    autor = input("Introduce el autor del libro nuevo: ")
+    precio = input("Introduce el precio del libro nuevo: ")
+    
+    libro = Libro(titulo, autor, precio)
+    inventario.agregar_libro(libro)
+    
+    #inventario.buscar_libro("El principito")
+    #inventario.registrar_venta("El principito")
 if __name__ == "__main__":
     main()
         

@@ -1,4 +1,1 @@
 Hola, mundo!
-Esta es una línea adicional.
-Añadimos otra línea.
-Nueva línea agregada al final del fichero.
